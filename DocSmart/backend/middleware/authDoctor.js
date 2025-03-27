@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken'
 const authDoctor = async (req, res, next) => {
     const { dtoken } = req.headers
     if (!dtoken) {
-        return res.json({ success: false, message: 'Not Authorized Login Again' })
+        return res.json({ success: false, message: 'Not authorized login again' })
     }
     try {
         const token_decode = jwt.verify(dtoken, process.env.JWT_SECRET)

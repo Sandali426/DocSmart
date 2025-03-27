@@ -131,4 +131,4 @@ const DoctorContextProvider = (props) => {
 
 }
 
-export default DoctorContextProvider
+export default DoctorContextProvider;
