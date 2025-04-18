@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Starting date
-start_date="2025-04-17"
+start_date="2025-04-18"
 
 # Number of days
-days=5
+days=2
 
 # Commits per day
-commits_per_day=12
+commits_per_day=3
 
 counter=1
 
@@ -23,7 +23,7 @@ do
 
     echo "Commit $counter" >> progress.txt
     git add .
-    git commit -m "Backdated commit $counter on $current_date"
+    git commit -m "Validations for user login"
     
     ((counter++))
   done
